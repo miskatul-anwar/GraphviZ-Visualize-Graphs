@@ -126,7 +126,7 @@ digraph G {
   node [shape=circle,style=filled, color=lightblue]
   edge [style=dashed, color=grey]
   A-> {B,C,D,E,F,G}
-  A [ shape=triangle,color=grey]
+  A [ shape=diamond,color=grey]
 }
 ```
 
