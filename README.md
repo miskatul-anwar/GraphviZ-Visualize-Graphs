@@ -4,8 +4,7 @@ Graphviz is open source graph visualization software. This repository contains a
 ## Directory Structure
 
 ```
-├── LICENSE
-├── README.md
+.
 ├── src  # source code goes here
 │   ├── 1.gv
 │   ├── 2.gv
