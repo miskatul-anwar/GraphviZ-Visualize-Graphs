@@ -35,7 +35,9 @@ Below are the source codes along with their corresponding outputs:
 
 **Source (`src/1.gv`):**
 ```dot
-// Add the content of 1.gv here
+graph G{
+  A -- B
+}
 ```
 
 **Output (`target/01.png`):**
@@ -47,7 +49,11 @@ Below are the source codes along with their corresponding outputs:
 
 **Source (`src/2.gv`):**
 ```dot
-// Add the content of 2.gv here
+digraph G{
+  A -> B
+  B -> C 
+  C -> A
+}
 ```
 
 **Output (`target/02.png`):**
@@ -59,7 +65,9 @@ Below are the source codes along with their corresponding outputs:
 
 **Source (`src/3.gv`):**
 ```dot
-// Add the content of 3.gv here
+digraph G {
+  A -> {B,C,D}
+}
 ```
 
 **Output (`target/03.png`):**
@@ -71,7 +79,9 @@ Below are the source codes along with their corresponding outputs:
 
 **Source (`src/4.gv`):**
 ```dot
-// Add the content of 4.gv here
+digraph G {
+  {A,B,C} -> {D,E,F}
+}
 ```
 
 **Output (`target/04.png`):**
@@ -83,7 +93,10 @@ Below are the source codes along with their corresponding outputs:
 
 **Source (`src/5.gv`):**
 ```dot
-// Add the content of 5.gv here
+digraph G {
+  node [style=filled, color=lightblue]
+  {A,B,C} -> {D,E,F}
+}
 ```
 
 **Output (`target/05.png`):**
@@ -95,7 +108,12 @@ Below are the source codes along with their corresponding outputs:
 
 **Source (`src/6.gv`):**
 ```dot
-// Add the content of 6.gv here
+digraph G {
+  node [shape=square,style=filled, color=lightblue]
+  edge [style=dotted, color=grey]
+  {A,B,C}->{D,E,F}
+  B [ shape=triangle,color=grey]
+}
 ```
 
 **Output (`target/06.png`):**
@@ -107,23 +125,28 @@ Below are the source codes along with their corresponding outputs:
 
 **Source (`src/7.gv`):**
 ```dot
-// Add the content of 7.gv here
 ```
 
 **Output (`target/07.png`):**
 ![Graph 7](target/07.png)
-
+digraph G {
+  layout = neato
+  node [shape=circle,style=filled, color=lightblue]
+  edge [style=dashed, color=grey]
+  A-> {B,C,D,E,F,G}
+  A [ shape=triangle,color=grey]
+}
 ---
 
 ## How to Generate Graphs
 
 To generate PNG files from the Graphviz `.gv` files, use the following command:
 
-```sh
-dot -Tpng src/1.gv -o target/01.png
+```bash
+dot -Tpng src/<file.gv> -o target/<output.png>
 ```
 
-Replace `1.gv` and `01.png` with the appropriate filenames for other graphs.
+Replace `file.gv` and `output.png` with the appropriate filenames for other graphs.
 
 
 
