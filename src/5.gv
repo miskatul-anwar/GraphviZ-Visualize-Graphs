@@ -1,0 +1,4 @@
+digraph G {
+  node [style=filled, color=lightblue]
+  {A,B,C} -> {D,E,F}
+}

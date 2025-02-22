@@ -1,0 +1,6 @@
+digraph G {
+  node [shape=square,style=filled, color=lightblue]
+  edge [style=dotted, color=grey]
+  {A,B,C}->{D,E,F}
+  B [ shape=triangle,color=grey]
+}
