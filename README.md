@@ -125,8 +125,5 @@ dot -Tpng src/1.gv -o target/01.png
 
 Replace `1.gv` and `01.png` with the appropriate filenames for other graphs.
 
-## License
 
-This project is licensed under the terms specified in the `LICENSE` file.
 
-Make sure to replace the `// Add the content of X.gv here` placeholders with the actual Graphviz code from your files. Let me know if you need any modifications! 🚀
