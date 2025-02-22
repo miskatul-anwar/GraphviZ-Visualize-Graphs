@@ -1,4 +1,4 @@
-## Graphviz Examples with Directory Structure
+# Graphviz Examples with Directory Structure
 Graphviz is open source graph visualization software. This repository contains a collection of Graphviz source files (`.gv`) and their corresponding output images (`.png`).
 
 ## Directory Structure
@@ -24,7 +24,7 @@ Graphviz is open source graph visualization software. This repository contains a
     └── 07.png
 ```
 
-## Graphs Overview
+## Examples
 
 Below are the source codes along with their corresponding outputs:
 
