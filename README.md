@@ -1,15 +1,12 @@
-# Graphviz is open source graph visualization software.
-
-# Graphviz Project
-
-This repository contains a collection of Graphviz source files (`.gv`) and their corresponding output images (`.png`).
+## Graphviz Examples with Directory Structure
+Graphviz is open source graph visualization software. This repository contains a collection of Graphviz source files (`.gv`) and their corresponding output images (`.png`).
 
 ## Directory Structure
 
 ```
 ├── LICENSE
 ├── README.md
-├── src
+├── src  # source code goes here
 │   ├── 1.gv
 │   ├── 2.gv
 │   ├── 3.gv
@@ -17,7 +14,7 @@ This repository contains a collection of Graphviz source files (`.gv`) and their
 │   ├── 5.gv
 │   ├── 6.gv
 │   └── 7.gv
-└── target
+└── target # all the outputs
     ├── 01.png
     ├── 02.png
     ├── 03.png
@@ -125,10 +122,6 @@ digraph G {
 
 **Source (`src/7.gv`):**
 ```dot
-```
-
-**Output (`target/07.png`):**
-![Graph 7](target/07.png)
 digraph G {
   layout = neato
   node [shape=circle,style=filled, color=lightblue]
@@ -136,6 +129,10 @@ digraph G {
   A-> {B,C,D,E,F,G}
   A [ shape=triangle,color=grey]
 }
+```
+
+**Output (`target/07.png`):**
+![Graph 7](target/07.png)
 ---
 
 ## How to Generate Graphs
