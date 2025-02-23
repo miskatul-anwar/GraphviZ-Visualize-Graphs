@@ -38,7 +38,7 @@ graph G{
 }
 ```
 
-**Output (`target/01.png`):**
+**Output (`target/01.png`):**\
 ![Graph 1](target/01.png)
 
 ---
