@@ -54,7 +54,7 @@ digraph G{
 }
 ```
 
-**Output (`target/02.png`):**
+**Output (`target/02.png`):**\
 ![Graph 2](target/02.png)
 
 ---
@@ -68,7 +68,7 @@ digraph G {
 }
 ```
 
-**Output (`target/03.png`):**
+**Output (`target/03.png`):**\
 ![Graph 3](target/03.png)
 
 ---
@@ -82,7 +82,7 @@ digraph G {
 }
 ```
 
-**Output (`target/04.png`):**
+**Output (`target/04.png`):**\
 ![Graph 4](target/04.png)
 
 ---
@@ -97,7 +97,7 @@ digraph G {
 }
 ```
 
-**Output (`target/05.png`):**
+**Output (`target/05.png`):**\
 ![Graph 5](target/05.png)
 
 ---
@@ -114,7 +114,7 @@ digraph G {
 }
 ```
 
-**Output (`target/06.png`):**
+**Output (`target/06.png`):**\
 ![Graph 6](target/06.png)
 
 ---
@@ -132,7 +132,7 @@ digraph G {
 }
 ```
 
-**Output (`target/07.png`):**
+**Output (`target/07.png`):**\
 ![Graph 7](target/07.png)
 ---
 ### Graph 8
@@ -172,7 +172,7 @@ digraph BeautifulGraph {
     {rank=same; E; F; G; H; I; J}
 }
 ```
-**Output (`target/08.png`):**
+**Output (`target/08.png`):**\
 ![Graph 8](target/08.png)
 ---
 
