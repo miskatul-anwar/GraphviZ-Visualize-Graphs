@@ -12,7 +12,8 @@ Graphviz is open source graph visualization software. This repository contains a
 │   ├── 4.gv
 │   ├── 5.gv
 │   ├── 6.gv
-│   └── 7.gv
+│   ├── 7.gv
+│   └── 8.gv
 └── target # all the outputs
     ├── 01.png
     ├── 02.png
@@ -20,7 +21,8 @@ Graphviz is open source graph visualization software. This repository contains a
     ├── 04.png
     ├── 05.png
     ├── 06.png
-    └── 07.png
+    ├── 07.png
+    └── 08.png
 ```
 
 ## Examples
@@ -132,6 +134,46 @@ digraph G {
 
 **Output (`target/07.png`):**
 ![Graph 7](target/07.png)
+---
+### Graph 8
+
+**Source (`src/8.gv`):**
+```
+digraph BeautifulGraph {
+    rankdir=LR;
+    splines=true;
+    overlap=false;
+    
+    node [shape=rect, style=filled, fillcolor=lightblue, fontname="IosevkaTermSlab Nerd Font", penwidth=2, style="rounded,filled"];
+
+    A -> B [label="5", color=red, penwidth=2.0];
+    A -> C [label="3", color=blue, penwidth=2.0, style=dashed];
+    A -> D [label="7", color=green, penwidth=2.0];
+
+    B -> E [label="2", color=purple, penwidth=2.0, style=dotted];
+    B -> F [label="4", color=orange, penwidth=2.0];
+
+    C -> G [label="6", color=cyan, penwidth=2.0, style=dashed];
+    C -> H [label="1", color=brown, penwidth=2.0];
+
+    D -> I [label="8", color=magenta, penwidth=2.0, style=dotted];
+    D -> J [label="9", color=gray, penwidth=2.0];
+
+    E -> K [label="3", color=red, penwidth=2.0];
+    F -> K [label="2", color=blue, penwidth=2.0, style=dashed];
+    G -> K [label="4", color=green, penwidth=2.0, style=dotted];
+    H -> K [label="1", color=orange, penwidth=2.0];
+    I -> K [label="5", color=purple, penwidth=2.0];
+    J -> K [label="6", color=cyan, penwidth=2.0, style=dotted];
+
+    K -> L [label="7", color=black, penwidth=3.0];
+
+    {rank=same; B; C; D}
+    {rank=same; E; F; G; H; I; J}
+}
+```
+**Output (`target/08.png`):**
+![Graph 8](target/08.png)
 ---
 
 ## How to Generate Graphs
